@@ -19,12 +19,11 @@ public class Anagram1 {
                 return false;
             }
         }
-
         return true;
     }
 
 
     public static void main(String[] args) {
-        System.out.println(isAnagram("manoj", "jonam"));
+        System.out.println(isAnagram("Manoj", "jonam"));
     }
 }

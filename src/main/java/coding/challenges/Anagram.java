@@ -7,6 +7,9 @@ public class Anagram {
 
 
     private static boolean anagram(String s1, String s2) {
+        if(s1.length() != s2.length()) {
+            return false;
+        }
         Map<Character, Integer> map = new HashMap<Character, Integer>();
         for (int i = 0; i <s1.length() ; i++) {
             if(map.containsKey(s1.charAt(i))) {
@@ -19,7 +22,7 @@ public class Anagram {
             if(!map.containsKey(s2.charAt(i))) {
                 return  false;
             } else {
-                map.put(s1.charAt(i), map.get(s1.charAt(i)) -1);
+                map.put(s2.charAt(i), map.get(s2.charAt(i)) -1);
             }
         }
         for (Integer i: map.values()
@@ -31,6 +34,6 @@ public class Anagram {
         return  true;
     }
     public static void main(String[] args) {
-        System.out.println(anagram("manojmaaa", "jonammaaa"));
+        System.out.println(anagram("Testagainn", "testagainn"));
     }
 }
