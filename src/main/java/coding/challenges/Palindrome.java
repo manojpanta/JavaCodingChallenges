@@ -35,6 +35,7 @@ public class Palindrome {
         System.out.println(isPalindrome("       Racecar  ")); //returns true
         System.out.println(isPalindrome("          Racecar  ")); //returns true
         System.out.println(isPalindrome("abba")); //returns true
-        System.out.println(isPalindrome("           ")); //returns true
+        System.out.println(isPalindrome(" ")); //returns false
+        System.out.println(isPalindrome("           ")); //returns false
     }
 }
