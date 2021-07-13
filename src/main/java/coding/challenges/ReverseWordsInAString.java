@@ -29,8 +29,8 @@ public class ReverseWordsInAString {
     }
 
     public static void main(String[] args) {
-//        System.out.println(reverseWords("Manoj is name My")); //returns "My name is Manoj"
-//        System.out.println(reverseWords("Manoj     is name My")); //returns "My name is Manoj"
-//        System.out.println(reverseWords("     Manoj is name My       ")); //returns "My name is Manoj"
+        System.out.println(reverseWords("Manoj is name My")); //returns "My name is Manoj"
+        System.out.println(reverseWords("Manoj     is name My")); //returns "My name is Manoj"
+        System.out.println(reverseWords("     Manoj is name My       ")); //returns "My name is Manoj"
     }
 }
