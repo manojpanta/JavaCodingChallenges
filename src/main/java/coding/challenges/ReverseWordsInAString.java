@@ -18,11 +18,7 @@ public class ReverseWordsInAString {
                 return toReturn;
             }
             String sub = s.substring(index1, index2);
-            if(toReturn.length() == 0){
-                toReturn = sub;
-            } else {
-                toReturn = sub + " " + toReturn;
-            }
+            toReturn = toReturn.length() == 0 ? sub : sub + " " + toReturn;
             index1 = index2 + 1;
         }
         return toReturn;
