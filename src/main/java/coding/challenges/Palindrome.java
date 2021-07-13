@@ -1,7 +1,6 @@
 package coding.challenges;
 
 public class Palindrome {
-
     private static boolean isPalindrome(String s) {
 //        have a pointer at the beginning and at the end.
 //        compare those characters as we move pointers towards each other i.e. i ++, j --

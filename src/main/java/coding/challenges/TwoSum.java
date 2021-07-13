@@ -4,7 +4,6 @@ import java.util.HashMap;
 import java.util.Map;
 
 public class TwoSum {
-
 //    leetcode two sum
 //   given an array of numbers and a target  return indices of numbers that add up to the target
     private static int[] twoSum(int[] nums, int target) {

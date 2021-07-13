@@ -4,12 +4,9 @@ import java.util.Arrays;
 
 public class ReverseAString {
 //    given an array of characters, return the array reversed without creating a second array
-
-
     private static char[] reverseString(char[] s) {
         int position = 0;
         int n = s.length;
-
 //        swap position within the array
         char temp;
         for (int i = n-1; i >= n/2 ; i--) {
@@ -18,7 +15,6 @@ public class ReverseAString {
             s[i] = temp;
             position += 1;
         }
-
         return s;
     }
 

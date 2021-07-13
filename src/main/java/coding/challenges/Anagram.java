@@ -4,8 +4,6 @@ import java.util.HashMap;
 import java.util.Map;
 
 public class Anagram {
-
-
     private static boolean anagram(String s1, String s2) {
         if(s1.length() != s2.length()) {
             return false;
@@ -33,6 +31,7 @@ public class Anagram {
         }
         return  true;
     }
+
     public static void main(String[] args) {
         System.out.println(anagram("Testagainn", "testagainn"));
     }

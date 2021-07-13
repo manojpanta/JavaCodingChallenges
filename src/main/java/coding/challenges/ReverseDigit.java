@@ -1,8 +1,6 @@
 package coding.challenges;
 
 public class ReverseDigit {
-
-
     private static int reverseDigit(int i) {
         int toReturn = 0;
         while(i > 0) {
