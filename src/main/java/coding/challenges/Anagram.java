@@ -23,8 +23,7 @@ public class Anagram {
                 map.put(s2.charAt(i), map.get(s2.charAt(i)) -1);
             }
         }
-        for (Integer i: map.values()
-             ) {
+        for (Integer i: map.values()) {
             if(i != 0) {
                 return false;
             }
@@ -33,6 +32,7 @@ public class Anagram {
     }
 
     public static void main(String[] args) {
-        System.out.println(anagram("Testagainn", "testagainn"));
+        System.out.println(anagram("nniagatset", "testagainn")); // returns true
+        System.out.println(anagram("nniagatset", "testagainn")); //
     }
 }
