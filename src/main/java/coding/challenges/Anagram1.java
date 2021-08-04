@@ -1,5 +1,8 @@
 package coding.challenges;
 
+import java.util.ArrayList;
+import java.util.List;
+
 public class Anagram1 {
     public static boolean isAnagram(String s, String t) {
         if (s == null || t== null || (s.length() != t.length())) {
