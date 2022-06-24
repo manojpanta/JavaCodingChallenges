@@ -31,14 +31,13 @@ public class CheckSodoku {
         columns.put(7, new int[9]);
         columns.put(8, new int[9]);
         columns.put(9, new int[9]);
-
         int k = 1;
         for (int i = 0; i < sodoku.length; i++) {
             Set<Integer> currentRow = new HashSet<>();
             for (int j = 0; j < sodoku[i].length; j++) {
                 int currNumber = sodoku[i][j];
                 int[] currentCol = columns.get(j + 1);
-                boolean currentColumnContainsCurrNumber = currentCol[0] == currNumber;
+                boolean currentColumnContainsCurrNumber = Arrays.asList(currentCol).contains(currNumber);
                 if (!currentRow.contains(currNumber) && !currentColumnContainsCurrNumber) {
                     currentRow.add(sodoku[i][j]);
                     columns.get(j + 1)[i] = sodoku[i][j];
@@ -50,7 +49,6 @@ public class CheckSodoku {
             }
         }
         System.out.println("It was sodoku");
-
         return true;
     }
 
