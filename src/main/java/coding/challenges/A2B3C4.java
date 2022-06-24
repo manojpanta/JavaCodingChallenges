@@ -6,7 +6,7 @@ public class A2B3C4 {
 //        given a String aabbccddaa return a string a2b2c2d2a2
         System.out.println(solution("ab"));//prints a1b1
         System.out.println(solution("aabb"));//prints a2b2
-        System.out.println(solution("aabbaa"));//prints a2b2a2
+        System.out.println(solution("aaabbaa"));//prints a3b2a2
     }
 
     private static String  solution(String s) {

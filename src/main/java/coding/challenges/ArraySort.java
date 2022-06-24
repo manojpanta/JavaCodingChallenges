@@ -17,8 +17,22 @@ public class ArraySort {
         return  ints;
     }
 
+    private static int[] arraySorted(int [] ints) {
+        for (int j = 0; j < ints.length ; j++) {
+            for (int l = j + 1; l < ints.length ; l++) {
+                if(ints[j] > ints[l]) {
+                    int temp = ints[j];
+                    ints[j] = ints[l];
+                    ints[l] = temp;
+                }
+            }
+        }
+        return ints;
+
+    }
+
     public static void main(String[] args) {
-        for (int i : arraySort(new int[] { 6, 7, 0, 23, 2, 1, 345})) {
+        for (int i : arraySorted(new int[] { 6, 7, 0, 23, 2, 1, 345})) {
             System.out.println(i);
         }
     }

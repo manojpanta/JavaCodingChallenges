@@ -33,7 +33,7 @@ public class Palindrome {
         System.out.println(isPalindrome("Racecar")); //returns true // in this case the middle character e will never be compared as i < j needs to be true  for the comparision.
         System.out.println(isPalindrome("       Racecar  ")); //returns true
         System.out.println(isPalindrome("          Racecar  ")); //returns true
-        System.out.println(isPalindrome("abba")); //returns true
+        System.out.println(isPalindrome("ab  ba")); //returns true
         System.out.println(isPalindrome(" ")); //returns false
         System.out.println(isPalindrome("           ")); //returns false
     }
