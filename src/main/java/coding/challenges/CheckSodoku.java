@@ -38,9 +38,8 @@ public class CheckSodoku {
             for (int j = 0; j < sodoku[i].length; j++) {
                 int currNumber = sodoku[i][j];
                 int[] currentCol = columns.get(j + 1);
-                boolean contains = currentCol[0] == currNumber;
-                Arrays.asList(currentCol).contains(currNumber);
-                if (!currentRow.contains(currNumber) && !contains) {
+                boolean currentColumnContainsCurrNumber = currentCol[0] == currNumber;
+                if (!currentRow.contains(currNumber) && !currentColumnContainsCurrNumber) {
                     currentRow.add(sodoku[i][j]);
                     columns.get(j + 1)[i] = sodoku[i][j];
                     k ++;
