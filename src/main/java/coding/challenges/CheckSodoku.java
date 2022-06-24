@@ -44,6 +44,7 @@ public class CheckSodoku {
                     columns.get(j + 1)[i] = sodoku[i][j];
                     k ++;
                 } else {
+                    System.out.println("No Sodoku");
                     return false;
                 }
             }
